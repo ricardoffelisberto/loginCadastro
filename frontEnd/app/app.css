@@ -1,0 +1,38 @@
+* {
+  width: auto;
+  font-size: medium;
+  align-items: center;
+}
+body {
+
+  background: #f0f2f5;
+  font-family: 'Poppins', sans-serif;
+
+  align-items: center;
+  text-align: center;
+}
+
+.tabela-usuarios {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.centralizar {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.margem-padrao {
+  margin-top: 2%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

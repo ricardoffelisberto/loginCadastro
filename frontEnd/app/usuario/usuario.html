@@ -1,0 +1,23 @@
+<link href="./../app.css" rel="stylesheet">
+<div class="centralizar">
+  <form ng-controller="UsuarioCtrl">
+    <table class="tabela-usuarios">
+      <tr>
+        <th>Código</th>
+        <th>Nome</th>
+        <th>CPF</th>
+        <th>Telefone</th>
+        <th>Endereço</th>
+        <th>Ações</th>
+      </tr>
+      <tr ng-repeat="usuario in usuarios">
+        <td>{{usuario.id}}</td>
+        <td>{{usuario.name}}</td>
+        <td>{{usuario.cpf}}</td>
+        <td>{{usuario.phone}}</td>
+        <td>{{usuario.address}}</td>
+        <td><a style="cursor: pointer" ng-click="excluir(usuario.id)">Excluir</a></td>
+      </tr>
+    </table>
+  </form>
+</div>
